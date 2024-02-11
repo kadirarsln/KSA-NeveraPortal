@@ -14,15 +14,15 @@ namespace NeveraPortal.DAL.Models
         {
             //optionsBuilder.UseSqlServer("Server=DESKTOP-EET2RGT;Database=NeveraPortalDB;Trusted_Connection=True;");
 
-            //optionsBuilder.UseSqlServer("server=Kadir\\SQLEXPRESS;initial catalog=ApiOtelDb;integrated security=true ;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("server=Kadir\\SQLEXPRESS;initial catalog=ApiOtelDb;integrated security=true ;TrustServerCertificate=true");
 
-            optionsBuilder.UseSqlServer("Server=DESKTOP-F160INQ;Database=NeveraPortalDB;Trusted_Connection=True;");
+
 
         }
 
         public DbSet<AdminUser> AdminUsers { get; set; }
         public DbSet<Company> Companies { get; set; }
-        public DbSet<Country> Countries { get; set;}
+        public DbSet<Country> Countries { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Category> Categories { get; set; }
